@@ -24,7 +24,7 @@ if __name__=='__main__':
     for exp in EXPERIMENTS[args.scenario]:
         data_path = args.data_dir + '/' + args.scenario + '/' + args.scenario + str(exp) + '_data.hdf5'
         gt_path = args.data_dir + '/' + args.scenario + '/' + args.scenario + str(exp) + '_gt.hdf5'
-        save_dir = args.data_dir + '/' + args.scenario + '/' + args.scenario + str(exp) + '_test'
+        save_dir = args.data_dir + '/' + args.scenario + '/' + args.scenario + str(exp)
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
         assert Path(data_path).exists()
